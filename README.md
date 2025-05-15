@@ -1,1 +1,1 @@
-# videogameqa-bench
+# VideoGameQA-Bench
