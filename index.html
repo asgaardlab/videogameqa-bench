@@ -232,35 +232,189 @@
     </div>
 
 
+
+
+
     <div class="container blog main">
         <h1>
             Image-based Tasks
         </h1>
+        <h2>Visual Unit Testing</h2>
         <p>
-
+            Visual unit tests verify visual attributes including presence, placement, positioning, colors, conditions,
+            and
+            other relevant properties of various image elements.
         </p>
-
     </div>
 
-
-
-
-
-
-    <div class="container blog main gray">
-        <img src="clarity/images/vit.png">
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Visual Unit Testing Sample">
         <p class="caption">
-            We split an image into fixed-size patches, linearly embed each of them, add position embeddings, and feed
-            the resulting sequence of vectors to a standard Transformer encoder. In order to perform classification, we
-            use the standard approach of adding an extra learnable "classification token" (represented as a gray image
-            patch) to the sequence.
+            Sample from the Visual Unit Testing task.
         </p>
-    </div>
     </div>
 
     <div class="container blog main">
+        <h2>UI Unit Testing</h2>
+        <p>
+            UI (visual) unit tests verify in-game UI elements such as menus, subtitles, heads-up displays (HUDs), and
+            interface components like graphs and charts. We simulate the UI unit testing tasks by asking the
+            vision-language
+            model questions about game screenshots.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="UI Unit Testing Sample">
+        <p class="caption">
+            Sample from the UI Unit Testing task.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>Visual Regression Testing</h2>
+        <p>
+            Visual regression tests check for unintended visual changes after a change to the game. A simple
+            pixel-by-pixel
+            comparison of two screenshots is not sufficient, as some variations (e.g., because of character
+            customization or
+            weather conditions in the game) may be acceptable.
+            Visual regressions may occur in cinematic parts of the game, such as cutscenes that have a defined sequence
+            flow. We simulate this task by asking the VLM to compare whether two screenshots are similar, taking into
+            account the specified acceptable or unacceptable variations.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Visual Regression Testing Sample">
+        <p class="caption">
+            Sample from the Visual Regression Testing task.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>Glitch Detection</h2>
+        <p>
+            Glitch detection is the process of identifying unintended visual errors, such as rendering issues, clipping,
+            or
+            physics/logical bugs that express themselves visually. We simulate this task by asking the VLM whether
+            glitch
+            and glitch-free images contain a glitch.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Glitch Detection Sample">
+        <p class="caption">
+            Sample from the Glitch Detection task.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>Parametric Clipping Detection</h2>
+        <p>
+            Given the common occurrence of clipping in games, our benchmark includes a dedicated task to evaluate a
+            model's
+            ability to detect such glitches. In this task, images feature an object (e.g., a cube, sphere, or character)
+            positioned at varying distances from a human character — from far apart to fully overlapping/clipping. The
+            VLM
+            is asked whether it detects clipping across each of these distances.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Parametric Clipping Detection Sample">
+        <p class="caption">
+            Sample from the Parametric Clipping Detection task.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>Bug Report Generation</h2>
+        <p>
+            In addition to testing and detection tasks, a potential application of VLMs is to assist QA engineers with
+            writing reports for detected bugs. We simulate this task by asking the VLM to write a description of a
+            glitch
+            image that can be used in a bug report.
+        </p>
+
+
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Bug Report Generation Sample">
+        <p class="caption">
+            Sample from the Bug Report Generation task.
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container blog main">
+        <h1>Video-based Tasks</h1>
+        <h2>Glitch Detection (Video)</h2>
+        <p>
+            Glitch detection in videos can be used to verify autonomous gameplay sessions from bots. Detecting glitches
+            in
+            videos is significantly more complex due to challenges such as analyzing motion patterns, and may require
+            identifying transient glitches that appear only briefly in a few frames. We simulate this task by asking the
+            vision-language model whether it detects a glitch in a video.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Bug Report Generation Sample">
+        <p class="caption">
+            Sample from the Glitch Detection (Video) task.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>Needle-in-a-Haystack (NIAH)</h2>
+        <p>
+            Needle-in-a-Haystack (NIAH) is a more challenging long-context retrieval version of the glitch detection
+            task.
+            We simulate this task by asking the vision-language model whether it detects a glitch in a video, and in
+            which
+            frame the glitch occurs for the first time.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Bug Report Generation Sample">
+        <p class="caption">
+            Sample from the Needle-in-a-Haystack (NIAH) task.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h2>Bug Report Generation (Video)</h2>
+        <p>
+            In this task, the vision-language model is asked to provide a description of a glitch video that can be used
+            in
+            a bug report.
+        </p>
+    </div>
+
+    <div class="container blog extra-large gray">
+        <img src="clarity/images/prismer.png" alt="Bug Report Generation Sample">
+        <p class="caption">
+            Sample from the Bug Report Generation (Video) task.
+        </p>
+    </div>
+
+
+
+
+
+    <div class="container blog main">
         <h2>
-            Container Layouts
+            Leaderboard
         </h2>
         <p class="text">
             In Clarity, I have provided container widths with five options: <code>main</code>, <code>large</code>,
