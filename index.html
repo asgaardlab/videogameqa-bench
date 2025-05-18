@@ -81,9 +81,16 @@
 
                 <div class="info">
                     <div>
-                        <a href="https://github.com/lorenmt/clarity-template" class="button icon"
-                            style="background-color: rgba(255, 255, 255, 0.25); margin-bottom: 0;">Source Code <i
-                                class="fa-solid fa-code"></i></a>
+                        <a href="https://arxiv.org" class="button icon"
+                            style="background-color: rgba(255, 255, 255, 0.2)"> Paper <i
+                                class="fa-solid fa-book-open"></i></a> &nbsp;&nbsp;
+                        <a href="https://github.com" class="button icon"
+                            style="background-color: rgba(255, 255, 255, 0.2)">Artifacts <i
+                                class="fa-solid fa-file-code"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://huggingface.co/datasets/taesiri/VideoGameQA-Bench" class="button icon"
+                            style="background-color: rgba(255, 255, 255, 0.2)">Dataset <i
+                                class="fa-solid fa-database"></i></a>
                     </div>
                 </div>
             </div>
@@ -100,41 +107,104 @@
         <h1>
             Introduction
         </h1>
-        <p class='text'>
-            Clarity merges designs I've developed over the years for my prior AI research projects. By open-sourcing
-            this template, I hope to benefit the AI and broader science community, by providing a clean and hackable
-            website solution to better present and visualise research.
+        <p>
+            The global video game industry continues to expand rapidly, with its market value projected to reach $257
+            billion by
+            2028. Alongside this substantial growth, the process of developing high-quality video games remains
+            inherently
+            complex and demanding. A critical challenge within game development is to ensure visual quality and
+            consistency
+            through a rigorous visual testing and quality assurance (QA) process. Automation of visual QA tasks remains
+            particularly challenging, and currently, most visual QA relies heavily on manual inspection, making the
+            process
+            time-consuming, costly, labor-intensive, and prone to human error.
+        </p>
+        <p>
+            The visual QA process for video games can generally be abstracted into three main types of tasks:
+        </p>
+        <ol>
+            <li>
+                <strong>Verifying scene integrity</strong> by comparing the visual representation of scenes against
+                intended
+                configurations and known reference states, such as an oracle or previously rendered versions of the same
+                scenes.
+            </li>
+            <li>
+                <strong>Detecting glitches</strong> through open-ended exploration—these glitches are unintended
+                gameplay or
+                visual artifacts without specific reference points, requiring testers to rely on common sense and
+                general
+                knowledge for detection.
+            </li>
+            <li>
+                <strong>Systematically reporting and documenting</strong> all identified glitches, ensuring developers
+                receive
+                clear and actionable information to address problems effectively during game development.
+            </li>
+        </ol>
+
+        <p>
+            Recent advancements in vision-language models (VLMs) present promising opportunities to automate and
+            significantly
+            enhance the efficiency of video game QA. However, progress in applying VLMs to game QA has been limited by
+            the lack
+            of standardized benchmarks. Current multimodal benchmarks tend to focus heavily on complex mathematical or
+            textual
+            reasoning tasks, overlooking essential visual comprehension tasks fundamental to video game QA. Similarly,
+            existing
+            game-specific benchmarks often represent only narrow aspects of QA tasks, thus inadequately evaluating and
+            tracking
+            VLM performance across diverse QA scenarios.
         </p>
 
-        <p class="text">
-            In today's AI research landscape, particularly with the rise of generative AI, it's increasingly beneficial
-            for AI researchers to include interactive blog posts alongside research publications. Additional media
-            materials and online demos, popularised by <a href="https://github.com/gradio-app/awesome-demos">Gradio
-                Demos</a>, can make research more accessible and engaging to a broader audience. While large
-            corporations can easily leverage teams of graphic designers and writers to polish their design and writing,
-            Ph.D. students and independent AI researchers often lack the time and resources to do so. Clarity bridges
-            this gap by offering an aesthetically pleasing, easy-to-navigate template for presenting AI research,
-            simplifying the process of creating visually appealing technical blog posts.
+    </div>
+
+
+    <div class="container blog main first" id="blog-main">
+        <h1>
+            Our Contributions
+        </h1>
+        <p>
+            In this paper, we introduce <strong>GameQA-Benchmark</strong>, a benchmark designed to fill the gap in
+            evaluating
+            VLMs for video game QA. Our key findings and contributions are as follows:
         </p>
 
-        <p class="text">
-            The inspiration for Clarity also comes from many AI pioneers who have written clear and interactive blog
-            posts that have significantly helped me study new machine learning research and insights. I'd like to extend
-            my deepest gratitude to <a href="https://otoro.net/ml/">David Ha</a>, <a
-                href="https://colah.github.io/about.html">Chris Olah</a> (as well as his great contribution to <a
-                href="https://distill.pub/">Distill Pub</a> and <a href="https://transformer-circuits.pub/">Transformer
-                Circuits</a>), <a href="https://lilianweng.github.io/">Lilian Weng</a>, <a
-                href="https://www.inference.vc/about/">Ferenc Huszár</a>, and <a
-                href="https://karpathy.github.io/">Andrej Karpathy</a>. Their work has demonstrated the power of clear,
-            accessible communication in AI research, and Clarity aims to continue this tradition, fostering a community
-            where <em> knowledge can be shared easily, freely and beautifully.</em>
-        </p>
-
-        <p class="text">
-            Within this template, I will also introduce some design guidelines and tips, complemented by visual examples
-            from my own projects and those I admire. These guidelines will help you create a polished and professional
-            presentation for your research, ensuring your findings are communicated as effectively as possible.
-        </p>
+        <ol>
+            <li>
+                We present <strong>GameQA-Benchmark</strong> featuring 9 distinct tasks and a large set of questions
+                designed
+                considering real-world video game development scenarios, such as visual unit testing, regression
+                testing, UI
+                validation, video needle-in-a-haystack, and glitch detection.
+            </li>
+            <li>
+                While VLMs show promising performance on various multimodal benchmarks and can function as OCR systems,
+                they
+                perform poorly at detecting fine details required for accurate scene understanding and parsing complex
+                UI
+                elements.
+            </li>
+            <li>
+                Frontier VLMs show good performance on the glitch detection task using images (up to 82.8%) and videos
+                (up to
+                78.1%); however, all struggle when it comes to glitches related to body configuration, intricate object
+                clipping, and common-sense reasoning.
+            </li>
+            <li>
+                Visual regression testing remains one of the most challenging tasks for VLMs.
+            </li>
+            <li>
+                Locating specific glitch moments in videos remains a challenge, both in detecting and accurately
+                pinpointing the
+                glitch.
+            </li>
+            <li>
+                Frontier VLMs can generate useful bug reports for up to 50% of real-world glitches, providing accurate
+                and
+                descriptive summaries of the glitches.
+            </li>
+        </ol>
     </div>
 
 
