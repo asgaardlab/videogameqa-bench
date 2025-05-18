@@ -119,29 +119,34 @@
             process
             time-consuming, costly, labor-intensive, and prone to human error.
         </p>
+
+        <br>
+
         <p>
             The visual QA process for video games can generally be abstracted into three main types of tasks:
         </p>
-        <ol>
-            <li>
-                <strong>Verifying scene integrity</strong> by comparing the visual representation of scenes against
-                intended
-                configurations and known reference states, such as an oracle or previously rendered versions of the same
-                scenes.
-            </li>
-            <li>
-                <strong>Detecting glitches</strong> through open-ended exploration—these glitches are unintended
-                gameplay or
-                visual artifacts without specific reference points, requiring testers to rely on common sense and
-                general
-                knowledge for detection.
-            </li>
-            <li>
-                <strong>Systematically reporting and documenting</strong> all identified glitches, ensuring developers
-                receive
-                clear and actionable information to address problems effectively during game development.
-            </li>
+        <br>
+        <li>
+            <strong>Verifying scene integrity</strong> by comparing the visual representation of scenes against
+            intended
+            configurations and known reference states, such as an oracle or previously rendered versions of the same
+            scenes.
+        </li>
+        <li>
+            <strong>Detecting glitches</strong> through open-ended exploration—these glitches are unintended
+            gameplay or
+            visual artifacts without specific reference points, requiring testers to rely on common sense and
+            general
+            knowledge for detection.
+        </li>
+        <li>
+            <strong>Systematically reporting and documenting</strong> all identified glitches, ensuring developers
+            receive
+            clear and actionable information to address problems effectively during game development.
+        </li>
         </ol>
+
+        <br>
 
         <p>
             Recent advancements in vision-language models (VLMs) present promising opportunities to automate and
@@ -156,7 +161,6 @@
             tracking
             VLM performance across diverse QA scenarios.
         </p>
-
     </div>
 
 
@@ -169,6 +173,7 @@
             evaluating
             VLMs for video game QA. Our key findings and contributions are as follows:
         </p>
+        <br>
 
         <ol>
             <li>
@@ -210,41 +215,18 @@
 
     <div class="container blog main">
         <h1>
-            Containers and Visual Diagrams
+            VideoGameQA-Bench
         </h1>
-
-        <p class="text">
-            Most AI projects incorporate visual diagrams to effectively communicate complex concepts. These diagrams
-            often highlight new neural architecture designs and ML training pipelines, which are central to the
-            project's contributions and research highlights. Clear and well-designed diagrams can significantly enhance
-            the reader's understanding and engagement with the research. In Clarity, texts and visual diagrams are
-            wrapped within a div container to maintain consistent design layouts.
+        <p>
+            We designed <strong>GameQA-Benchmark</strong>'s tasks by simulating realistic QA scenarios encountered
+            during actual video game development. However, to make the benchmark more relevant for future QA automation
+            tasks, we also included tasks that may challenge current software engineering practices while also remaining
+            highly
+            relevant. The table below provides an overview of the contents of each task in the benchmark.
+            In summary, <strong>GameQA-Benchmark</strong> contains 2,236 image-based samples and 1,200 video-based
+            samples sourced from more than 800 games and 9 synthetic game scenes.
         </p>
 
-        <p class="text">
-            Simple design modules, such as minor adjustments to a neural network block, can be directly embedded within
-            the text in the same container, without additional captions. This approach helps readers comprehend the
-            proposed concept in a seamless and integrated manner.
-        </p>
-
-        <p class="text">
-            Here is an example I redesigned, illustrating the difference between standard and bottleneck residual blocks
-            as proposed in <a href="https://arxiv.org/abs/1512.03385">Residual Networks</a>.
-        </p>
-
-        <img src="clarity/images/residual.png" style="width: 80%;">
-
-        <p class="text">
-            For more complex visual diagrams, such as detailed neural architecture designs, it is recommended to use a
-            separate container with a distinct background colour. This ensures that diagrams stand out and are easily
-            distinguishable from the main text. Additionally, a new caption style is provided to help explain each
-            design detail clearly.
-        </p>
-
-        <p class="text">
-            Here is an example I redesigned, illustrating the architectural details in <a
-                href="https://arxiv.org/abs/2010.11929">Vision Transformers (ViTs)</a>.
-        </p>
     </div>
 
 
