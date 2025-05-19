@@ -446,10 +446,6 @@
 
 
 
-
-
-
-
     <div class="container blog main">
         <h2>Visual Regression Testing</h2>
         <p>
@@ -555,9 +551,9 @@
                     Provide your answer in the following format:
                 </p> <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of why you think a glitch is present",
-"glitch_detected": true or false,
-"description_of_glitch": "Description of the glitch if detected else empty string"
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
 }</code></pre>
             </div>
 
@@ -579,9 +575,9 @@
                     Provide your answer in the following format:
                 </p> <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of why you think a glitch is present",
-"glitch_detected": true or false,
-"description_of_glitch": "Description of the glitch if detected else empty string"
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
 }</code></pre>
             </div>
         </div>
@@ -602,9 +598,9 @@
                     Provide your answer in the following format:
                 </p> <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of why you think a glitch is present",
-"glitch_detected": true or false,
-"description_of_glitch": "Description of the glitch if detected else empty string"
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
 }</code></pre>
             </div>
         </div>
@@ -670,11 +666,11 @@
                 <p>Provide your analysis in the following JSON format:</p>
                 <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
-"bug_report_title": "A clear, concise title summarizing the issue",
-"bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
-gameplay",
-"affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
+    "reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
+    "bug_report_title": "A clear, concise title summarizing the issue",
+    "bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
+    gameplay",
+    "affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
 }</code></pre>
             </div>
 
@@ -693,11 +689,11 @@ gameplay",
                 <p>Provide your analysis in the following JSON format:</p>
                 <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
-"bug_report_title": "A clear, concise title summarizing the issue",
-"bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
-gameplay",
-"affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
+    "reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
+    "bug_report_title": "A clear, concise title summarizing the issue",
+    "bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
+    gameplay",
+    "affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
 }</code></pre>
             </div>
         </div>
@@ -715,11 +711,11 @@ gameplay",
                 <p>Provide your analysis in the following JSON format:</p>
                 <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
-"bug_report_title": "A clear, concise title summarizing the issue",
-"bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
-gameplay",
-"affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
+    "reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
+    "bug_report_title": "A clear, concise title summarizing the issue",
+    "bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
+    gameplay",
+    "affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
 }</code></pre>
             </div>
         </div>
@@ -729,10 +725,6 @@ gameplay",
             Sample from the Bug Report Generation task.
         </p>
     </div>
-
-
-
-
 
 
 
@@ -748,12 +740,110 @@ gameplay",
         </p>
     </div>
 
-    <div class="container blog extra-large gray">
-        <img src="clarity/images/prismer.png" alt="Bug Report Generation Sample">
+
+    <div class="container blog main gray slide-container">
+        <div class="slide-menu">
+            <ul class="dots" id="slide-menu-glitch-detection-video">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+
+
+        <div class="slide-content" , style="display: block;">
+            <video src="assets/samples/glitch_detection_video/1fq69ba.mp4" style="width: 100%;" controls></video>
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>
+                    You are a helpful assistant analyzing video game clips for glitches. You will be given a short video
+                    clip from a video game, and your task is to analyze the video and determine whether it contains a
+                    glitch.
+                </p>
+                <br>
+                <p>
+                    Provide your answer in the following format:
+                </p> <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
+}</code></pre>
+            </div>
+
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <video src="assets/samples/glitch_detection_video/3jwto0.mp4" style="width: 100%;" controls></video>
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>
+                    You are a helpful assistant analyzing video game clips for glitches. You will be given a short video
+                    clip from a video game, and your task is to analyze the video and determine whether it contains a
+                    glitch.
+                </p>
+                <br>
+                <p>
+                    Provide your answer in the following format:
+                </p> <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <video src="assets/samples/glitch_detection_video/272xqw.mp4" style="width: 100%;" controls></video>
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>
+                    You are a helpful assistant analyzing video game clips for glitches. You will be given a short video
+                    clip from a video game, and your task is to analyze the video and determine whether it contains a
+                    glitch.
+                </p>
+                <br>
+                <p>
+                    Provide your answer in the following format:
+                </p> <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <video src="assets/samples/glitch_detection_video/gnky82.mp4" style="width: 100%;" controls></video>
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>
+                    You are a helpful assistant analyzing video game clips for glitches. You will be given a short video
+                    clip from a video game, and your task is to analyze the video and determine whether it contains a
+                    glitch.
+                </p>
+                <br>
+                <p>
+                    Provide your answer in the following format:
+                </p> <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of why you think a glitch is present",
+    "glitch_detected": true or false,
+    "description_of_glitch": "Description of the glitch if detected else empty string"
+}</code></pre>
+            </div>
+        </div>
         <p class="caption">
-            Sample from the Glitch Detection (Video) task.
+            Sample from the Video-based Glitch Detection task.
         </p>
     </div>
+
+
+
 
     <div class="container blog main">
         <h2>Needle-in-a-Haystack (NIAH)</h2>
@@ -784,7 +874,7 @@ gameplay",
 
     <div class="container blog main gray slide-container">
         <div class="slide-menu">
-            <ul class="dots" id="slide-menu-bug-report">
+            <ul class="dots" id="slide-menu-bug-report-video">
                 <li class="dot active"></li>
                 <li class="dot"></li>
                 <li class="dot"></li>
@@ -804,11 +894,11 @@ gameplay",
                 <p>Provide your analysis in the following JSON format:</p>
                 <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
-"bug_report_title": "A clear, concise title summarizing the issue",
-"bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
-gameplay",
-"affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
+    "reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
+    "bug_report_title": "A clear, concise title summarizing the issue",
+    "bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
+    gameplay",
+    "affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
 }</code></pre>
             </div>
 
@@ -827,11 +917,11 @@ gameplay",
                 <p>Provide your analysis in the following JSON format:</p>
                 <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
-"bug_report_title": "A clear, concise title summarizing the issue",
-"bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
-gameplay",
-"affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
+    "reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
+    "bug_report_title": "A clear, concise title summarizing the issue",
+    "bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
+    gameplay",
+    "affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
 }</code></pre>
             </div>
         </div>
@@ -849,23 +939,20 @@ gameplay",
                 <p>Provide your analysis in the following JSON format:</p>
                 <br>
                 <pre><code class="javascript">{
-"reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
-"bug_report_title": "A clear, concise title summarizing the issue",
-"bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
-gameplay",
-"affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
+    "reasoning": "Brief explanation of what you observe and why it appears to be a glitch",
+    "bug_report_title": "A clear, concise title summarizing the issue",
+    "bug_report_description": "Detailed description of the visual bug, including its appearance and potential impact on
+    gameplay",
+    "affected_item": "The specific game element (character, object, environment, UI) affected by the glitch"
 }</code></pre>
             </div>
         </div>
 
 
         <p class="caption">
-            Sample from the Bug Report Generation task.
+            Sample from the Video-based Bug Report Generation task.
         </p>
     </div>
-
-
-
 
 
     <div class="container blog main">
@@ -1193,12 +1280,6 @@ gameplay",
         </div>
         <p></p>
     </div>
-
-
-
-
-
-
 
 
 
