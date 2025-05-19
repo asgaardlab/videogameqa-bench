@@ -248,9 +248,9 @@
     </div>
 
 
-    <div class="container blog main gray">
+    <div class="container blog main gray slide-container">
         <div class="slide-menu">
-            <ul class="dots" id="slide-menu">
+            <ul class="dots" id="slide-menu-visual-unit-test">
                 <li class="dot active"></li>
                 <li class="dot"></li>
                 <li class="dot"></li>
@@ -263,7 +263,7 @@
 
 
             <div style="margin-top: 1em; font-size: small;">
-                <p>How many of Spider-Man’s and Black Cat’s eye areas, including those covered by their masks, are
+                <p>How many of Spider-Man's and Black Cat's eye areas, including those covered by their masks, are
                     visible in the
                     image?
                 </p>
@@ -283,7 +283,9 @@
 
 
             <div style="margin-top: 1em; font-size: small;">
-                <p>Based on the image answer the following questions:</p>
+                <p>Please provide the values of the dice in the topmost row from left to right, and return them as a
+                    JSON list.
+                </p>
                 <br>
 
                 <ol style="margin-left: 2em;">
@@ -363,12 +365,90 @@
         </p>
     </div>
 
-    <div class="container blog extra-large gray">
-        <img src="clarity/images/prismer.png" alt="UI Unit Testing Sample">
+
+    <div class="container blog main gray slide-container">
+        <div class="slide-menu">
+            <ul class="dots" id="slide-menu-ui-unit">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+
+
+        <div class="slide-content" , style="display: block;">
+            <img src="assets/samples/ui_test/dashboard.jpg" style="width: 100%;">
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>Read the dashboard and fill the JSON values below:</p>
+                <br>
+                <pre><code class="javascript">{
+    "tire_pressure": {
+        "front_left": 0,
+        "front_right": 0,
+        "rear_left": 0,
+        "rear_right": 0
+    },
+    "brake_temps": {
+        "front_left": 0,
+        "front_right": 0,
+        "rear_left": 0,
+        "rear_right": 0
+    },
+    "break_bias": 0,
+    "break_sl": 0,
+    "settings": {
+        "map": 0,
+        "mix": 0,
+        "tc1": 0,
+        "tc2": 0
+    },
+    "gear": 0,
+    "rpm": 0,
+    "speed_mph": 0
+}
+                </code></pre>
+            </div>
+
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <img src="assets/samples/ui_test/dicegrid.jpg" style="width: 100%;">
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>Please provide the values of the dice in the topmost row from left to right, and return them as a
+                    JSON list.
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <img src="assets/samples/ui_test/inventory.jpg" style="width: 100%;">
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>Based on the image, extract the list of weapons (single word) and return it in the following JSON
+                    format:
+                </p>
+
+                <pre><code class="javascript">{ "items": ["weapon"] }</code></pre>
+            </div>
+        </div>
+
+
         <p class="caption">
             Sample from the UI Unit Testing task.
         </p>
     </div>
+
+
+
+
+
+
 
     <div class="container blog main">
         <h2>Visual Regression Testing</h2>
