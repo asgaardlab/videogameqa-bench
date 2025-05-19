@@ -856,12 +856,150 @@
         </p>
     </div>
 
-    <div class="container blog extra-large gray">
-        <img src="clarity/images/prismer.png" alt="Bug Report Generation Sample">
+
+
+
+
+
+    <div class="container blog main gray slide-container">
+        <div class="slide-menu">
+            <ul class="dots" id="slide-menu-needle-in-a-haystack">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+
+
+        <div class="slide-content" , style="display: block;">
+            <video
+                src="https://huggingface.co/datasets/taesiri/GBPro-RAW/resolve/main/NIAH-dataset/2a174a7c-cc20-4153-81d4-f0aca975f372/question_video_1.mp4"
+                style="width: 100%;" controls></video>
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>You are a specialized video game quality assurance analyst trained to detect visual anomalies in
+                    gameplay footage.
+                    Your task is to analyze the provided video clip to identify any bugs, glitches, visual artifacts, or
+                    unexpected
+                    behaviors.
+                </p>
+                <br>
+                <p>What to Look For</p>
+                <br>
+                <ul style="margin-left: 2em;">
+                    <li>Visual artifacts (texture issues, flickering, clipping)</li>
+                    <li>Animation problems (jerky movements, T-poses)</li>
+                    <li>Rendering glitches (missing textures, lighting errors)</li>
+                    <li>Gameplay anomalies (collision failures, object teleportation)</li>
+                </ul>
+                <br>
+
+                <p>Response Format</p>
+                <br>
+                <p>After your thorough analysis, provide your findings in this exact JSON format:</p>
+
+                <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of what you observed in the video and why it appears to be a glitch",
+    "glitch_detected": true or false,
+    "timestamp": 0
+}</code></pre>
+            </div>
+
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <video
+                src="https://huggingface.co/datasets/taesiri/GBPro-RAW/resolve/main/NIAH-dataset/8a319b68-5023-492c-afcf-2edac0f959cb/question_video_1.mp4"
+                style="width: 100%;" controls></video>
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>You are a specialized video game quality assurance analyst trained to detect visual anomalies in
+                    gameplay footage.
+                    Your task is to analyze the provided video clip to identify any bugs, glitches, visual artifacts, or
+                    unexpected
+                    behaviors.
+                </p>
+                <br>
+                <p>What to Look For</p>
+                <br>
+                <ul style="margin-left: 2em;">
+                    <li>Visual artifacts (texture issues, flickering, clipping)</li>
+                    <li>Animation problems (jerky movements, T-poses)</li>
+                    <li>Rendering glitches (missing textures, lighting errors)</li>
+                    <li>Gameplay anomalies (collision failures, object teleportation)</li>
+                </ul>
+                <br>
+
+                <p>Response Format</p>
+                <br>
+                <p>After your thorough analysis, provide your findings in this exact JSON format:</p>
+
+                <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of what you observed in the video and why it appears to be a glitch",
+    "glitch_detected": true or false,
+    "timestamp": 0
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <video
+                src="https://huggingface.co/datasets/taesiri/GBPro-RAW/resolve/main/NIAH-dataset/f8d11cfd-8be8-4019-b84a-318709287ba0/question_video_1.mp4"
+                style="width: 100%;" controls></video>
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>You are a specialized video game quality assurance analyst trained to detect visual anomalies in
+                    gameplay footage.
+                    Your task is to analyze the provided video clip to identify any bugs, glitches, visual artifacts, or
+                    unexpected
+                    behaviors.
+                </p>
+                <br>
+                <p>What to Look For</p>
+                <br>
+                <ul style="margin-left: 2em;">
+                    <li>Visual artifacts (texture issues, flickering, clipping)</li>
+                    <li>Animation problems (jerky movements, T-poses)</li>
+                    <li>Rendering glitches (missing textures, lighting errors)</li>
+                    <li>Gameplay anomalies (collision failures, object teleportation)</li>
+                </ul>
+                <br>
+
+                <p>Response Format</p>
+                <br>
+                <p>After your thorough analysis, provide your findings in this exact JSON format:</p>
+
+                <br>
+                <pre><code class="javascript">{
+    "reasoning": "Brief explanation of what you observed in the video and why it appears to be a glitch",
+    "glitch_detected": true or false,
+    "timestamp": 0
+}</code></pre>
+            </div>
+        </div>
+
+
         <p class="caption">
-            Sample from the Needle-in-a-Haystack (NIAH) task.
+            Sample from the Needle-in-a-Haystack task.
         </p>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="container blog main">
         <h2>Bug Report Generation (Video)</h2>
