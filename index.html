@@ -48,6 +48,19 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
         </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        /* right-align every numeric cell */
+        #dataset_comparison_table td {
+            text-align: right;
+        }
+
+        /* keep the row-header (model names) left-aligned */
+        #dataset_comparison_table th[scope="row"] {
+            text-align: left;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 
 <body>
@@ -1104,6 +1117,7 @@
 
     <div class="container blog extra-large gray" id="dataset_comparison_table">
         <div class="table-wrapper">
+
             <table border="1" cellpadding="4" cellspacing="0">
                 <caption style="text-align:left;">
                     Accuracy&nbsp;(%) scores of models on <em>VideoGameQA-Bench</em>.<br>
@@ -1302,7 +1316,7 @@
                     </tr>
 
                     <tr>
-                        <th scope="row">Sonnet 3.7</th>
+                        <th scope="row">Sonnet&nbsp;3.7</th>
                         <td>23.0</td>
                         <td>22.0</td>
                         <td>24.0</td>
@@ -1318,7 +1332,7 @@
                     </tr>
 
                     <tr>
-                        <th scope="row">Sonnet 3.5</th>
+                        <th scope="row">Sonnet&nbsp;3.5</th>
                         <td>23.0</td>
                         <td>29.0</td>
                         <td>14.0</td>
@@ -1383,7 +1397,7 @@
                     </tr>
 
                     <tr>
-                        <th scope="row">Mistral-Small-3.1 (24B)</th>
+                        <th scope="row">Mistral-Small-3.1&nbsp;(24B)</th>
                         <td>15.0</td>
                         <td>17.0</td>
                         <td>25.6</td>
@@ -1399,7 +1413,7 @@
                     </tr>
 
                     <tr>
-                        <th scope="row">Qwen-2.5-VL (72B)</th>
+                        <th scope="row">Qwen-2.5-VL&nbsp;(72B)</th>
                         <td>38.0</td>
                         <td>27.0</td>
                         <td>21.2</td>
@@ -1414,6 +1428,8 @@
                         <td>31.7<sup>†</sup></td>
                     </tr>
                 </tbody>
+
+
             </table>
         </div>
         <p></p>
