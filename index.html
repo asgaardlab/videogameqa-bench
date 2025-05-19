@@ -247,12 +247,111 @@
         </p>
     </div>
 
-    <div class="container blog extra-large gray">
-        <img src="clarity/images/prismer.png" alt="Visual Unit Testing Sample">
+
+    <div class="container blog main gray">
+        <div class="slide-menu">
+            <ul class="dots" id="slide-menu">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+
+
+        <div class="slide-content" , style="display: block;">
+            <img src="assets/samples/visual_unit_test/eyes.jpg" style="width: 100%;">
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>How many of Spider-Man’s and Black Cat’s eye areas, including those covered by their masks, are
+                    visible in the
+                    image?
+                </p>
+                <br>
+                <p>Provide your answer in the following JSON format:</p>
+                <br>
+                <pre><code class="javascript">{
+    "spiderman_eyes_visible": 0,
+    "black_cat_eyes_visible": 0
+}</code></pre>
+            </div>
+
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <img src="assets/samples/visual_unit_test/bird.jpg" style="width: 100%;">
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>Based on the image answer the following questions:</p>
+                <br>
+
+                <ol style="margin-left: 2em;">
+                    <li>How many birds are visible inside the room (including inside the cage)?</li>
+                    <li>How many birds are visible outside the window?</li>
+                    <li>Is the birdcage door open?</li>
+                    <li>What is the primary color of the bird inside the cage?</li>
+                    <li>Is there a piece of wood leaning on the inside windowsill?</li>
+                    <li>What is the main color of the blossoms seen outside the window?</li>
+                    <li>Is the wallpaper on the left wall patterned?</li>
+                    <li>Where is the grey bird positioned?</li>
+                </ol>
+                <br>
+
+                <p>Provide your answer in the following JSON format:</p>
+                <br>
+                <pre><code class="javascript">{
+    "birds_inside_count": 0, // Integer count
+    "birds_outside_count": 0, // Integer count
+    "birdcage_door_open": false, // true or false
+    "bird_in_cage_color": "", // options: ["yellow", "grey", "blue", "brown"]
+    "wood_on_sill_present": false, // true or false
+    "blossom_color": "", // options: ["pink", "white", "yellow", "red"]
+    "left_wallpaper_patterned": false, // true or false
+    "grey_bird_location": "" // options: ["inside cage", "on windowsill", "outside window", "on floor"]
+}
+                </code></pre>
+            </div>
+        </div>
+
+        <div class="slide-content" , style="display: none;">
+            <img src="assets/samples/visual_unit_test/car.jpg" style="width: 100%;">
+
+
+            <div style="margin-top: 1em; font-size: small;">
+                <p>Based on the image answer the following questions:</p>
+
+                <ol style="margin-left: 2em;">
+                    <li>What is the primary color of the rally car?</li>
+                    <li>Is the driver-side door of the car open or closed?</li>
+                    <li>What number is displayed in large font on the car's door?</li>
+                    <li>What brand name is visible on the yellow decal above the 'elf' logo on the car's side?</li>
+                    <li>Is there a coiled orange air hose hanging from the ceiling on the left side?</li>
+                    <li>What type of pattern is on the floor directly beneath the car?</li>
+                    <li>Is there a screen or monitor mounted on the wall displaying graphs?</li>
+                </ol>
+
+                <p>Provide your answer in the following JSON format:</p>
+
+                <pre><code class="javascript">{
+    "car_primary_color": "", // options: ["light blue", "dark blue", "white", "red", "black"]
+    "driver_door_state": "", // options: ["open", "closed"]
+    "car_door_number": 0, // Integer value
+    "yellow_decal_brand": "", // String value representing the text
+    "coiled_hose_visible": false, // true or false
+    "floor_pattern": "", // options: ["plain", "checkered", "tiled", "textured_metal"]
+    "wall_monitor_visible": false // true or false
+}
+                </code></pre>
+            </div>
+        </div>
+
+
         <p class="caption">
             Sample from the Visual Unit Testing task.
         </p>
     </div>
+
 
     <div class="container blog main">
         <h2>UI Unit Testing</h2>
