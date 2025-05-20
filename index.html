@@ -637,11 +637,58 @@
         </p>
     </div>
 
-    <div class="container blog extra-large gray">
-        <img src="clarity/images/prismer.png" alt="Parametric Clipping Detection Sample">
-        <p class="caption">
-            Sample from the Parametric Clipping Detection task.
-        </p>
+    <div class="container blog main gray">
+        <div class="columns-2">
+            <div>
+                <img id="parti" src="assets/samples/parametric/cube_cam_1.gif" />
+                <p class="caption selection">
+                    <b>Input Prompt: </b><br />
+                    A parametric clipping detection task where a
+                    <select id="image-selector1">
+                        <option value="cube" selected>cube</option>
+                        <option value="sphere">sphere</option>
+                        <option value="plane">plane</option>
+                    </select>
+                    <select id="image-selector1-temp" style="display: none;">
+                        <option id="image-selector1-temp-option"></option>
+                    </select>
+                    approaches a human character from
+                    <select id="image-selector2">
+                        <option value="cam_1" selected>Camera 1</option>
+                        <option value="cam_2">Camera 2</option>
+                    </select>
+                    <select id="image-selector2-temp" style="display: none;">
+                        <option id="image-selector2-temp-option"></option>
+                    </select>
+                    until it clips and intersects with the character.
+                </p>
+            </div>
+
+            <div>
+                <img id="parti2" src="assets/samples/parametric/cube_cam_2.gif" />
+                <p class="caption selection">
+                    <b>Input Prompt: </b><br />
+                    A parametric clipping detection task where a
+                    <select id="image-selector3">
+                        <option value="cube" selected>cube</option>
+                        <option value="sphere">sphere</option>
+                        <option value="plane">plane</option>
+                    </select>
+                    <select id="image-selector3-temp" style="display: none;">
+                        <option id="image-selector3-temp-option"></option>
+                    </select>
+                    approaches a human character from
+                    <select id="image-selector4">
+                        <option value="cam_1" selected>Camera 1</option>
+                        <option value="cam_2">Camera 2</option>
+                    </select>
+                    <select id="image-selector4-temp" style="display: none;">
+                        <option id="image-selector4-temp-option"></option>
+                    </select>
+                    until it clips and intersects with the character.
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="container blog main">
