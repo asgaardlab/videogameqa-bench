@@ -65,10 +65,7 @@
     </div>
 
     <div class="container blog main">
-        <h1>Image-based Visual Unit Testing</h1>
-        <p>
-
-        </p>
+        <h1>Image-based Glitch Detection</h1>
 
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Results Summary (Image-based
@@ -328,6 +325,252 @@
         </div>
     </div>
 
+    <div class="container blog main">
+        <h1>Video-based Glitch Detectiom</h1>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Model
+                            Name
+                        </th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Total
+                            Entries</th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">TP
+                        </th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">TN
+                        </th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">FP
+                        </th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">FN
+                        </th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Errors</th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Overall Acc
+                            (%)</th>
+                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Details
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr class="bg-green-50 font-semibold">
+                        <td class="px-4 py-3 text-sm text-gray-900">gemini-2.5-pro-preview-03-25</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">334</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">447</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">53</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">166</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">78.1</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gemini-2.5-pro-preview-03-25/preview_gemini-2.5-pro-preview-03-25.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">o3-2025-04-16</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">995</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">298</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">470</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">27</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">200</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">77.2</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/o3-2025-04-16/preview_o3-2025-04-16.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">gpt-4.1-2025-04-14</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">990</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">411</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">347</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">149</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">83</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">76.6</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gpt-4.1-2025-04-14/preview_gpt-4.1-2025-04-14.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">o4-mini-2025-04-16</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">960</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">330</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">370</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">115</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">143</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">2</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">72.9</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/o4-mini-2025-04-16/preview_o4-mini-2025-04-16.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">gpt-4.1-mini-2025-04-14</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">995</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">346</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">372</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">124</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">153</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">72.2</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gpt-4.1-mini-2025-04-14/preview_gpt-4.1-mini-2025-04-14.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">claude-3-7-sonnet-20250219</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">997</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">250</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">419</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">79</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">245</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">4</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">67.1</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/claude-3-7-sonnet-20250219/preview_claude-3-7-sonnet-20250219.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">gemini-2.5-flash-preview-04-17</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">426</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">221</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">279</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">74</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">64.7</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gemini-2.5-flash-preview-04-17/preview_gemini-2.5-flash-preview-04-17.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">claude-3-5-sonnet-20241022</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">972</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">266</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">346</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">70</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">150</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">140</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">63.0</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/claude-3-5-sonnet-20241022/preview_claude-3-5-sonnet-20241022.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">mistralai/mistral-small-3.1-24b-instruct</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">999</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">238</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">376</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">112</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">238</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">35</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">61.5</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/mistralai_mistral-small-3.1-24b-instruct/preview_mistralai_mistral-small-3.1-24b-instruct.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">meta-llama/llama-4-scout-17b-16e-instruct</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">117</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">469</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">25</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">349</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">40</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">58.6</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/meta-llama_llama-4-scout-17b-16e-instruct/preview_meta-llama_llama-4-scout-17b-16e-instruct.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">gpt-4o-2024-08-06</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">995</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">356</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">214</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">53</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">90</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">282</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">57.3</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gpt-4o-2024-08-06/preview_gpt-4o-2024-08-06.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">meta-llama/llama-4-maverick-17b-128e-instruct</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">82</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">484</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">6</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">375</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">53</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">56.6</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/meta-llama_llama-4-maverick-17b-128e-instruct/preview_meta-llama_llama-4-maverick-17b-128e-instruct.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">qwen2.5-vl-72b-instruct</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">869</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">99</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">380</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">2</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">388</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">55.1</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/qwen2.5-vl-72b-instruct/preview_qwen2.5-vl-72b-instruct.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">gemini-2.0-flash</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">477</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">68</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">432</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">23</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">54.5</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gemini-2.0-flash/preview_gemini-2.0-flash.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">google/gemma-3-27b-it</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">999</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">498</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">15</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">484</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">1</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">51.4</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/google_gemma-3-27b-it/preview_google_gemma-3-27b-it.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-900">gpt-4.1-nano-2025-04-14</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">983</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">466</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">25</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">468</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">24</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                        <td class="px-4 py-3 text-sm text-gray-900 text-center">49.9</td>
+                        <td class="px-4 py-3 text-sm text-center"><a
+                                href="./artifacts/glitch_detection_video/gpt-4.1-nano-2025-04-14/preview_gpt-4.1-nano-2025-04-14.html"
+                                class="text-blue-600 hover:text-blue-800">View</a></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 
 
