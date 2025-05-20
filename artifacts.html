@@ -1,0 +1,353 @@
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity: A Minimalist Website Template for AI Research</title>
+    <meta name="description"
+        content="We've presented Clarity, a minimalist and elegant website template for AI research.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_EN" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="https://shikun.io/projects/clarity" property="og:url">
+    <meta content="Clarity" property="og:title">
+    <meta content="Website Template for AI Research" property="og:description">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@your_twitter_id">
+    <meta name="twitter:description" content="Clarity: A Minimalist Website Template for AI Research">
+    <meta name="twitter:image:src" content="assets/figures/clarity.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <script src="assets/scripts/navbar.js"></script> <!-- Comment to remove table of content. -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+              scale: 95,
+              fonts: ["Gyre-Pagella"],
+              imageFont: null,
+              undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+              }
+          });
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Title Page -->
+    <!-- Dark Theme Example: Change the background colour dark and change the following div "blog-title" into "blog-title white". -->
+
+
+
+    <div class="container blog main first" id="blog-main">
+        <h1>
+            Artifacts for VideoGameQA-Bench
+        </h1>
+        <p class='text'>
+            In this section, we present model outputs and qualitative results for VideoGameQA-Bench.
+        </p>
+
+
+    </div>
+
+    <div class="container blog main">
+        <h1>Image-based Visual Unit Testing</h1>
+        <p>
+
+        </p>
+
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Results Summary (Image-based
+                Glitch
+                Detection)</h2>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Model
+                                Name</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Total
+                                Entries</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                TP</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                TN</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                FP</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                FN</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Errors
+                            </th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Overall
+                                Acc (%)</th>
+                            <th
+                                class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Details
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="bg-green-50 font-semibold">
+                            <td class="px-4 py-3 text-sm text-gray-900">gpt-4o-2024-08-06</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">999</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">417</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">411</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">89</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">82</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">82.9</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gpt-4o-2024-08-06/preview_gpt-4o-2024-08-06.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">gpt-4.1-2025-04-14</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">374</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">439</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">61</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">126</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">81.3</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gpt-4.1-2025-04-14/preview_gpt-4.1-2025-04-14.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">gpt-4.1-mini-2025-04-14</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">999</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">468</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">300</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">199</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">32</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">76.9</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gpt-4.1-mini-2025-04-14/preview_gpt-4.1-mini-2025-04-14.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">o4-mini-2025-04-16</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">331</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">433</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">67</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">169</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">76.4</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/o4-mini-2025-04-16/preview_o4-mini-2025-04-16.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">gemini-2.5-pro-preview-03-25</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">999</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">418</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">336</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">164</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">81</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">75.5</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gemini-2.5-pro-preview-03-25/preview_gemini-2.5-pro-preview-03-25.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">o3-2025-04-16</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">253</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">484</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">16</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">247</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">73.7</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/o3-2025-04-16/preview_o3-2025-04-16.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">claude-3-5-sonnet-20241022</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">238</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">463</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">37</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">261</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">70.1</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/claude-3-5-sonnet-20241022/preview_claude-3-5-sonnet-20241022.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">qwen/qwen2.5-vl-72b-instruct</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">254</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">446</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">52</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">246</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">2</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">70.0</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/qwen_qwen2.5-vl-72b-instruct/preview_qwen_qwen2.5-vl-72b-instruct.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">gemini-2.0-flash</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">259</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">422</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">78</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">241</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">68.1</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gemini-2.0-flash/preview_gemini-2.0-flash.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">gemini-2.5-flash-preview-04-17</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">999</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">215</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">448</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">52</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">284</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">66.4</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gemini-2.5-flash-preview-04-17/preview_gemini-2.5-flash-preview-04-17.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">claude-3-7-sonnet-20250219</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">177</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">474</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">26</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">323</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">65.1</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/claude-3-7-sonnet-20250219/preview_claude-3-7-sonnet-20250219.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">mistralai/mistral-small-3.1-24b-instruct</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">230</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">367</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">133</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">270</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">59.7</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/mistralai_mistral-small-3.1-24b-instruct/preview_mistralai_mistral-small-3.1-24b-instruct.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">gpt-4.1-nano-2025-04-14</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">413</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">157</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">343</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">87</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">57.0</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/gpt-4.1-nano-2025-04-14/preview_gpt-4.1-nano-2025-04-14.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">meta-llama/llama-4-scout</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">74</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">484</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">16</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">425</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">55.8</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/meta-llama_llama-4-scout/preview_meta-llama_llama-4-scout.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">meta-llama/llama-4-maverick</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">44</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">488</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">11</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">456</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">53.2</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/meta-llama_llama-4-maverick/preview_meta-llama_llama-4-maverick.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-900">google/gemma-3-27b-it</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">1000</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">460</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">7</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">446</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">0</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">87</td>
+                            <td class="px-4 py-3 text-sm text-gray-900 text-center">46.7</td>
+                            <td class="px-4 py-3 text-sm text-center"><a
+                                    href="./artifacts/glitch_detection/google_gemma-3-27b-it/preview_google_gemma-3-27b-it.html"
+                                    class="text-blue-600 hover:text-blue-800">View</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer Page -->
+    <footer>
+        <div class="container">
+            <p>
+                This website is built on the <a href="https://shikun.io/projects/clarity">Clarity Template</a>,
+                designed
+                by <a href="https://shikun.io/">Shikun Liu</a>.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="clarity/clarity.js"></script>
+    <script src="assets/scripts/main.js"></script>
+
+</html>
+</body>
