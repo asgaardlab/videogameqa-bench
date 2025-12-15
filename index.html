@@ -289,7 +289,7 @@
         </div>
 
 
-        <div class="slide-content" , style="display: block;">
+        <!-- <div class="slide-content" , style="display: block;">
             <img src="assets/samples/visual_unit_test/eyes.jpg" style="width: 100%;">
 
 
@@ -307,7 +307,7 @@
 }</code></pre>
             </div>
 
-        </div>
+        </div> -->
 
         <div class="slide-content" , style="display: none;">
             <img src="assets/samples/visual_unit_test/bird.jpg" style="width: 100%;">
@@ -379,7 +379,40 @@
             </div>
         </div>
 
+<div class="slide-content" style="display: block;">
+    <img src="assets/samples/visual_unit_test/unchartered.jpg" style="width: 100%;">
 
+    <div style="margin-top: 1em; font-size: small;">
+        <p>Based on the image answer the following questions:</p>
+
+        <p>1. What is the character's posture?<br>
+        2. Is the character facing towards or away from the camera?<br>
+        3. Is there debris (like leaves) visible on the walkway?<br>
+        4. What object is immediately in front of the character, bordering the edge?<br>
+        5. Is there a large metal gate visible on the left side of the scene?<br>
+        6. What time of day is depicted?<br>
+        7. Is a cityscape with lit buildings visible in the background?<br>
+        8. What is the condition of the metal gate on the left?</p>
+
+        <br>
+        <p>Provide your answer in the following JSON format:</p>
+        <br>
+
+        <pre><code class="javascript">{
+  "character_posture": "" // options: ["standing", "walking", "sitting", "crouching"],
+  "character_facing_direction": "" // options: ["towards", "away"],
+  "debris_on_walkway": false // options: [true, false],
+  "object_in_front_of_character": "" // options: ["railing", "wall", "open space", "door"],
+  "gate_visible_left": false // options: [true, false],
+  "time_of_day": "" // options: ["day", "night", "dawn/dusk"],
+  "lit_cityscape_visible": false // options: [true, false],
+  "left_gate_condition": "" // options: ["new", "rusty/weathered", "broken"]
+}</code></pre>
+    </div>
+</div>
+        
+
+        
         <p class="caption">
             Sample from the Visual Unit Testing task.
         </p>
